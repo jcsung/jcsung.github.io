@@ -5,6 +5,16 @@ var pkg = require('./package.json');
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', function() {
 
+  // FontAwesome
+  gulp.src([
+      './node_modules/font-awesome/**/*',
+      '!./node_modules/font-awesome/*',
+      '!./node_modules/font-awesome/less/*',
+      '!./node_modules/font-awesome/scss/*',
+      '!./node_modules/font-awesome/css/font-awesome.css'
+    ])
+    .pipe(gulp.dest('./vendor/fonts'))
+
   // Bootstrap
   gulp.src([
       './node_modules/bootstrap/dist/**/*',
