@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -9,6 +9,9 @@
     <meta name="author" content="">
 
     <title>Jeffrey C. Sung - Front End Web Developer</title>
+
+	<!-- My own CSS -->
+	<link href="css/main.css" rel="stylesheet" />
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -71,29 +74,29 @@
                 <img alt="Jeffrey Sung" border="0" class="img-fluid" src="./jeffrey-sung.jpg" />
             </p>
 
-            <p>Hi, my name is Jeff Sung, and I am a Front End Web Developer.  
-              My primary focus is React/Redux development, but I am also 
-              proficient in other frameworks and libraries including jQuery, 
+            <p>Hi, my name is Jeff Sung, and I am a Front End Web Developer.
+              My primary focus is React/Redux development, but I am also
+              proficient in other frameworks and libraries including jQuery,
               Bootstrap, Metal.js, and AlloyUI.
             </p>
 
             <p>
-              I also have extensive experience developing for and using 
-              Liferay Portal CE and EE (6.1, 6.2, and DXP).  At Liferay, 
-              working on agile software development teams, I developed 
-              Metal.js components for internal tools, created AlloyUI 
-              components for internal and client-facing administrative 
-              products, and implemented custom themes for internal and 
-              client-facing applications.  I also integrated new front 
-              end components with the back end, conforming to existing 
+              I also have extensive experience developing for and using
+              Liferay Portal CE and EE (6.1, 6.2, and DXP).  At Liferay,
+              working on agile software development teams, I developed
+              Metal.js components for internal tools, created AlloyUI
+              components for internal and client-facing administrative
+              products, and implemented custom themes for internal and
+              client-facing applications.  I also integrated new front
+              end components with the back end, conforming to existing
               development patterns.
             </p>
 
             <p>
-              Outside of web development, I enjoy playing board games (Brass, 
-              Food Chain Magnate, and Cosmic Encounter being my favorites), 
-              photography, watching and discussing TV and movies (Sci-Fi, 
-              heists, and bad movies especially), eating, and taking pictures 
+              Outside of web development, I enjoy playing board games (Brass,
+              Food Chain Magnate, and Cosmic Encounter being my favorites),
+              photography, watching and discussing TV and movies (Sci-Fi,
+              heists, and bad movies especially), eating, and taking pictures
               of my food.
             </p>
           </div>
@@ -152,7 +155,7 @@
             </div>
 
             <p>
-              For my full r&eacute;sum&eacute;, please click 
+              For my full r&eacute;sum&eacute;, please click
               <a href="Resume-Jeffrey-Sung.pdf">here</a>.
             </p>
           </div>
@@ -164,9 +167,79 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Projects</h2>
+            <h2>Selected Projects</h2>
 
-            <p>This part is coming soon!  Please check out my <a href="https://bitbucket.org/jcsung/" target="_blank">Bitbucket</a> for now!</p>
+			<div class="col-lg-12 list-group-item mx-auto project-description" data-host="bitbucket" data-repo="speaker-visualizer">
+				<h3>Speaker Visualizer</h3>
+
+				<p>
+					A few years ago, my parents became interested in, and began learning, to
+					play the organ.  Modern organs are digital.  My dad wanted to look into
+					how to position multiple speaker banks to get the best sound in a room.
+				</p>
+
+				<p>
+					This speaker visualizer allows placement of speakers currently treated as
+					point sources, and the placement and movement of a 'listener' (also
+					treated and visualized as a point).  It traces out the sound rays from
+					each pair of speakers, and computes the formed angle between them.
+				</p>
+
+				<p>
+					This project uses React/Redux with d3.js.  It is currently still in
+					progress.
+				</p>
+			</div>
+
+			<div class="col-lg-12 list-group-item mx-auto project-description" data-host="bitbucket" data-repo="genzeo">
+				<h3>Molecular Simulation Structure File-Handling Library</h3>
+
+				<p>
+					This code was my library for reading and handling molecular simulation structure files.
+				</p>
+
+				<p>
+					It included general reading and writing superclasses that were extended to
+					read and write PDB, XYZ, and in-house simulation structure file formats.
+					Handling the structure files in an object-oriented fashion allowed for the
+					various objects to handle properties such as distances, angles, and
+					dihedral angles very easy regardless of boundary conditions (of which
+					simple cubic and orthorhombic were implemented).
+				</p>
+
+				<p>
+					As of the last commit, <code>main()</code> was being used to compute radial
+					distribution functions.
+				</p>
+			</div>
+
+            <div class="col-lg-12 list-group-item mx-auto project-description" data-host="bitbucket" data-repo="ucsd-circle-k-2007-2008-website">
+				<h3>UCSD Circle K 2007 - 2008 Website</h3>
+
+				<p>
+					The 2007-2008 UCSD Circle K Website was my first attempt at web development.
+					Even back then, I recognized I was carrying out a lot of bad practices.
+					API keys and Database passwords are in the files.  The front and back ends
+					are not separated, so it is impossible to change the front end without
+					refactoring the back end, and vice versa.  The variable naming is atrocious.
+				</p>
+
+				<p>
+					But everyone had to start somewhere, and this is how I started.  Minus pages
+					that had personal information or Facebook App API keys, pictures with people
+					whose permission I did not get, and files that I do not know the copyright
+					status of, this is the 2007-2008 UCSD Circle K site.
+				</p>
+
+				<p>
+					The site included the Automated Member-Accessible Networked Database Accounts,
+					a PHP/MySQL event signup system that handled online event signups, with
+					event subscriptions, a highly customized administrative tool suite for board
+					members, simplistic analytics tools, and a semi-automated MRP-display system.
+					There was also a Facebook App that displayed the week's upcoming events.
+					(The code for that was not included here).
+				</p>
+			</div>
           </div>
         </div>
       </div>
@@ -178,38 +251,38 @@
           <div class="col-lg-8 mx-auto">
             <h2>Academia</h2>
             <p>
-              In a previous life, I worked towards becoming a computational 
-              chemist in academia.  I have an MS in Chemical Physics from 
+              In a previous life, I worked towards becoming a computational
+              chemist in academia.  I have an MS in Chemical Physics from
               <a href="https://twin-cities.umn.edu/" target="_blank">
-              University of Minnesota - Twin Cities </a> an and MS in 
+              University of Minnesota - Twin Cities </a> an and MS in
               Chemistry from <a href="https://ucsd.edu/" target="_blank">
               University of California, San Diego</a>.
             </p>
 
             <p>
-              I specialized in molecular mechanics simulations of chemical 
-              systems, having done academic research using Monte Carlo 
-              simulations, Molecular Dynamics simulations, and Brownian 
-              Dynamics simulations, to develop highly accurate empirical small 
-              hydrocarbon force fields, to analyze the behavior metal-organic 
-              framework and zeolitic materials, and to investigate the binding 
-              kinetics of influenza neuraminidases with various ligands, 
-              respectively, in the labs of Professors 
-              <a href="http://siepmann.chem.umn.edu/" target="_blank">J. Ilja 
-              Siepmann</a>, 
-              <a href="http://paesanigroup.ucsd.edu/" target="_blank">Francesco 
-              Paesani</a>, and 
-              <a href="http://mccammon.ucsd.edu/" target="_blank">J. Andrew 
-              McCammon</a>, respectively.  My presentation and publication 
+              I specialized in molecular mechanics simulations of chemical
+              systems, having done academic research using Monte Carlo
+              simulations, Molecular Dynamics simulations, and Brownian
+              Dynamics simulations, to develop highly accurate empirical small
+              hydrocarbon force fields, to analyze the behavior metal-organic
+              framework and zeolitic materials, and to investigate the binding
+              kinetics of influenza neuraminidases with various ligands,
+              respectively, in the labs of Professors
+              <a href="http://siepmann.chem.umn.edu/" target="_blank">J. Ilja
+              Siepmann</a>,
+              <a href="http://paesanigroup.ucsd.edu/" target="_blank">Francesco
+              Paesani</a>, and
+              <a href="http://mccammon.ucsd.edu/" target="_blank">J. Andrew
+              McCammon</a>, respectively.  My presentation and publication
               records are available on request.
             </p>
 
             <p>
-              While I have permanently transitioned out of that industry, 
-              presently I continue to apply the 9 years of development 
-              experience, data science skills, analytical experience, 
-              presentation skills, teaching experience, debugging skills, and 
-              problem-solving expertise that I gained to projects in both 
+              While I have permanently transitioned out of that industry,
+              presently I continue to apply the 9 years of development
+              experience, data science skills, analytical experience,
+              presentation skills, teaching experience, debugging skills, and
+              problem-solving expertise that I gained to projects in both
               personal and professional contexts.
             </p>
           </div>
@@ -222,7 +295,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Contact</h2>
-            
+
             <div class="row">
               <div class="col-lg-3 mx-auto">
                 <a href="mailto:jeffrey.sung@gmail.com" target="_blank">
@@ -271,6 +344,9 @@
 
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
+
+	<!-- Custom JavaScript for project links -->
+	<script src="js/projects.js"></script>
 
   </body>
 
