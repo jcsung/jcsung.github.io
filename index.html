@@ -10,8 +10,8 @@
 
     <title>Jeffrey C. Sung - Front End Web Developer</title>
 
-	<!-- My own CSS -->
-	<link href="css/main.css" rel="stylesheet" />
+  <!-- My own CSS -->
+  <link href="css/main.css" rel="stylesheet" />
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -74,29 +74,33 @@
                 <img alt="Jeffrey Sung" border="0" class="img-fluid" src="./jeffrey-sung.jpg" />
             </p>
 
-            <p>Hi, my name is Jeff Sung, and I am a Front End Web Developer.
+            <p>
+              Hi, my name is Jeff Sung, and I am a Front End Web Developer.
               My primary focus is React/Redux development, but I am also
               proficient in other frameworks and libraries including jQuery,
-              Bootstrap, Metal.js, and AlloyUI.
+              Bootstrap, and UIKit.
             </p>
 
             <p>
-              I also have extensive experience developing for and using
-              Liferay Portal CE and EE (6.1, 6.2, and DXP).  At Liferay,
-              working on agile software development teams, I developed
-              Metal.js components for internal tools, created AlloyUI
-              components for internal and client-facing administrative
-              products, and implemented custom themes for internal and
-              client-facing applications.  I also integrated new front
-              end components with the back end, conforming to existing
-              development patterns.
+              I have development experience that interface with various 
+              back-end stacks, including Node.js, Java EE, and C#.NET.
+            </p>
+
+            <p>
+              Previously, I worked at Liferay, Inc., developing for and developing 
+              customized portals using Liferay Portal CE and EE (6.1, 6.2, and 
+              DXP).  At Liferay, I developed react-like Metal.js components for 
+              internal tools, created AlloyUI components for internal and 
+              client-facing administrative products, and implemented custom 
+              themes for internal and client-facing applications.  I also 
+              integrated new front end components with the back end.
             </p>
 
             <p>
               Outside of web development, I enjoy playing board games (Brass,
               Food Chain Magnate, and Cosmic Encounter being my favorites),
               photography, watching and discussing TV and movies (Sci-Fi,
-              heists, and bad movies especially), eating, and taking pictures
+              heist, and bad movies especially), eating, and taking pictures
               of my food.
             </p>
           </div>
@@ -117,25 +121,23 @@
                   <li class="list-group-item">Redux</li>
                   <li class="list-group-item">jQuery</li>
                   <li class="list-group-item">Bootstrap</li>
+                  <li class="list-group-item">UIKit</li>
                   <li class="list-group-item">HTML</li>
                   <li class="list-group-item">CSS</li>
                   <li class="list-group-item">JavaScript</li>
-                  <li class="list-group-item">Metal.js</li>
-                  <li class="list-group-item">AlloyUI</li>
                 </ul>
               </div>
 
               <div class="col-lg-4 mx-auto">
                   <ul class="list-group">
-                    <li class="list-group-item">Liferay Portal 6.1 - DXP</li>
+                    <li class="list-group-item">C#.NET</li>
                     <li class="list-group-item">Java</li>
+                    <li class="list-group-item">Python</li>
                     <li class="list-group-item">PHP</li>
                     <li class="list-group-item">MySQL</li>
                     <li class="list-group-item">bash</li>
                     <li class="list-group-item">C++</li>
                     <li class="list-group-item">Fortran 90/95</li>
-                    <li class="list-group-item">Adobe Photoshop</li>
-                    <li class="list-group-item">Adobe Illustrator</li>
                   </ul>
               </div>
 
@@ -147,7 +149,6 @@
                     <li class="list-group-item">npm</li>
                     <li class="list-group-item">gulp</li>
                     <li class="list-group-item">git</li>
-                    <li class="list-group-item">phpMyAdmin</li>
                     <li class="list-group-item">gdb</li>
                     <li class="list-group-item">GNU Make</li>
                   </ul>
@@ -169,93 +170,108 @@
           <div class="col-lg-8 mx-auto">
             <h2>Selected Projects</h2>
 
-			<div class="col-lg-12 list-group-item mx-auto project-description" data-host="bitbucket" data-repo="speaker-visualizer">
-				<h3>Speaker Visualizer</h3>
 
-				<p>
-					A few years ago, my parents became interested in, and began learning, to
-					play the organ.  Modern organs are digital.  My dad wanted to look into
-					how to position multiple speaker banks to get the best sound in a room.
-				</p>
+      <div class="col-lg-12 list-group-item mx-auto project-description" data-host="bitbucket" data-repo="stupid-traffic">
+        <h3>Stupid Traffic App</h3>
 
-				<p>
-					This speaker visualizer allows placement of speakers currently treated as
-					point sources, and the placement and movement of a 'listener' (also
-					treated and visualized as a point).  It traces out the sound rays from
-					each pair of speakers, and computes the formed angle between them.
-				</p>
+        <p>
+          I know how to use third-party APIs too.  Here's my Stupid Traffic App.  
+          It runs on a Raspberry Pi Zero W in the mornings getting data from the 
+          Google Advanced Directions API to tell me which route I should take to 
+          work each day in the mornings.  It runs every 15 minutes from 8 AM to 
+          11 AM (in case I have morning appointments or somesuch.)
+        </p>
 
-				<p>
-					This project uses React/Redux with d3.js.  It is currently still in
-					progress.
-				</p>
+        <p>
+          An update that tells me whether or not to bring an umbrella is pending.
+        </p>
+      </div>
+      <div class="col-lg-12 list-group-item mx-auto project-description" data-host="bitbucket" data-repo="speaker-visualizer">
+        <h3>Speaker Visualizer</h3>
+
+        <p>
+          A few years ago, my parents became interested in, and began learning, to
+          play the organ.  Modern organs are digital.  My dad wanted to look into
+          how to position multiple speaker banks to get the best sound in a room.
+        </p>
+
+        <p>
+          This speaker visualizer allows placement of speakers currently treated as
+          point sources, and the placement and movement of a 'listener' (also
+          treated and visualized as a point).  It traces out the sound rays from
+          each pair of speakers, and computes the formed angle between them.
+        </p>
+
+        <p>
+          This project uses React/Redux with a bit of d3.js.
+        </p>
       </div>
       
       <div class="col-lg-12 list-group-item mx-auto project-description" data-host="bitbucket" data-repo="gate">
-				<h3>Raspberry Pi Gate Opener</h3>
+        <h3>Raspberry Pi Gate Opener</h3>
 
         <p>
           My parents' gate frequently fails to open during the day.  I suspect 
           this is because the RF receiver overheats during the day due to poor 
           placement relative to the path of the sun.
-				</p>
+        </p>
 
-				<p>
+        <p>
           This simple script is hosted on a raspberry pi running nginx with a 
           fixed local ip that my parents can access by phone or computer while 
           on their home Wifi network.
-				</p>
-			</div>
+        </p>
+      </div>
 
-			<div class="col-lg-12 list-group-item mx-auto project-description" data-host="bitbucket" data-repo="genzeo">
-				<h3>Molecular Simulation Structure File-Handling Library</h3>
+      <div class="col-lg-12 list-group-item mx-auto project-description" data-host="bitbucket" data-repo="genzeo">
+        <h3>Molecular Simulation Structure File-Handling Library</h3>
 
-				<p>
-					This code was my library for reading and handling molecular simulation structure files.
-				</p>
+        <p>
+          This code was my library for reading and handling molecular simulation structure files.
+        </p>
 
-				<p>
-					It included general reading and writing superclasses that were extended to
-					read and write PDB, XYZ, and in-house simulation structure file formats.
-					Handling the structure files in an object-oriented fashion allowed for the
-					various objects to handle properties such as distances, angles, and
-					dihedral angles very easy regardless of boundary conditions (of which
-					simple cubic and orthorhombic were implemented).
-				</p>
+        <p>
+          It included general reading and writing superclasses that were extended to
+          read and write PDB, XYZ, and in-house simulation structure file formats.
+          Handling the structure files in an object-oriented fashion allowed for the
+          various objects to handle properties such as distances, angles, and
+          dihedral angles very easy regardless of boundary conditions (of which
+          simple cubic and orthorhombic were implemented).
+        </p>
 
-				<p>
-					As of the last commit, <code>main()</code> was being used to compute radial
-					distribution functions.
-				</p>
-			</div>
+        <p>
+          As of the last commit, <code>main()</code> was being used to compute radial
+          distribution functions.
+        </p>
+      </div>
 
             <div class="col-lg-12 list-group-item mx-auto project-description" data-host="bitbucket" data-repo="ucsd-circle-k-2007-2008-website">
-				<h3>UCSD Circle K 2007 - 2008 Website</h3>
+        <h3>UCSD Circle K 2007 - 2008 Website</h3>
 
-				<p>
-					The 2007-2008 UCSD Circle K Website was my first attempt at web development.
-					Even back then, I recognized I was carrying out a lot of bad practices.
-					API keys and Database passwords are in the files.  The front and back ends
-					are not separated, so it is impossible to change the front end without
-					refactoring the back end, and vice versa.  The variable naming is atrocious.
-				</p>
+        <p>
+          The 2007-2008 UCSD Circle K Website was my first attempt at web development.
+          Even back then, I recognized I was carrying out a lot of bad practices.
+          API keys and Database passwords are in the files.  The front and back ends
+          are not separated, so it is impossible to change the front end without
+          refactoring the back end, and vice versa.  The variable naming is atrocious.
+        </p>
 
-				<p>
-					But everyone had to start somewhere, and this is how I started.  Minus pages
-					that had personal information or Facebook App API keys, pictures with people
-					whose permission I did not get, and files that I do not know the copyright
-					status of, this is the 2007-2008 UCSD Circle K site.
-				</p>
+        <p>
+          But everyone had to start somewhere, and this is how I started.  Minus pages
+          that had personal information or Facebook App API keys, pictures with people
+          whose permission I did not get, and files that I do not know the copyright
+          status of, this is the 2007-2008 UCSD Circle K site.
+        </p>
 
-				<p>
-					The site included the Automated Member-Accessible Networked Database Accounts,
-					a PHP/MySQL event signup system that handled online event signups, with
-					event subscriptions, a highly customized administrative tool suite for board
-					members, simplistic analytics tools, and a semi-automated MRP-display system.
-					There was also a Facebook App that displayed the week's upcoming events.
-					(The code for that was not included here).
-				</p>
-			</div>
+        <p>
+          The site included the Automated Member-Accessible Networked Database Accounts,
+          a PHP/MySQL event signup system that handled online event signups, with
+          event subscriptions, a highly customized administrative tool suite for board
+          members, simplistic analytics tools, and a semi-automated MRP-display system.
+          There was also a Facebook App that displayed the week's upcoming events.
+          (The code for that was not included here).
+        </p>
+      </div>
           </div>
         </div>
       </div>
@@ -361,8 +377,8 @@
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
 
-	<!-- Custom JavaScript for project links -->
-	<script src="js/projects.js"></script>
+  <!-- Custom JavaScript for project links -->
+  <script src="js/projects.js"></script>
 
   </body>
 
