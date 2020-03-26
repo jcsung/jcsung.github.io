@@ -19,8 +19,12 @@ document.addEventListener(
 					if (host) {
 						project.addEventListener(
 							'click',
-							function() {
-								window.open(host + repo, '_blank');
+							function(event) {
+								if (event && event.target && event.target.tagName) {
+									if (event.target.tagName !== 'A') {
+										window.open(host + repo, '_blank');
+									}
+								}
 							}
 						);
 					}
